@@ -1,0 +1,333 @@
+body {
+    background-color: #F4F1DE;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+
+/* SECCION LIBROS */
+.card-text {
+    font-size: 18px;
+}
+
+.btnModal {
+    width: 25vh;
+    height: 10vh;
+    left: 1139px;
+    top: 774px;
+    color: white;
+    background: #E07A5F;
+    border-radius: 2px;
+}
+
+
+
+/* MODAL */
+
+
+
+#rectangulo1 {
+    background: #F4F1DE;
+}
+
+
+.divs p {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #E07A5F;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+   
+   
+
+}
+
+.divs button {    
+    background: #E07A5F;
+    border-radius: 2px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;    
+    color: #FFFFFF;
+}
+
+
+/* BIO */
+
+#bio #foto {
+    width: 320px;
+    height: 281px;
+    left: 100px;
+    top: 1285px;
+    position: absolute;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+
+#bio #texto #parrafo1 {
+    width: 681px;
+    height: 158px;
+    margin-left: 360px;
+    margin-top: 170px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+
+    color: #3D405B;
+}
+
+
+#bio #texto #parrafo2 {
+    width: 1040px;
+    height: 144px;
+    margin-left: 30px;
+    top: 1706px;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #3D405B;
+}
+
+
+
+
+/* SECCION CONTACTO */
+
+.img-formu {
+    height: 5vh;
+    width: 5vh;
+}
+
+#rectangulo-titulo {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    color: #3D405B;
+} 
+
+#rectangulo-nombreApellido .formulario__input {
+    width: 90%;
+    left: 635px;
+    top: 200px;
+    background: #FFFFFF;
+    border: 0.5px solid #393b4d;
+    box-sizing: border-box;
+}
+
+#rectangulo-datos .formulario__input {
+    width: 95%;
+    left: 635px;
+    top: 276px;
+    background: #FFFFFF;
+    border: 0.5px solid #3D405B;
+    box-sizing: border-box;
+}
+
+#grupo__consulta .formulario__input {
+    width: 95%;
+    max-height: 250px;
+    max-width: 100%;
+    left: 635px;
+    top: 405px;
+    background: #FFFFFF;
+    border: 0.5px solid #3D405B;
+    box-sizing: border-box;
+
+}
+
+
+.formulario__mensaje-exito {
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+
+
+.formulario__input-error {
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+
+.formulario__input-error-activo {
+    display: block;
+}
+
+.formulario__mensaje-exito-activo {
+    display: block;
+}
+
+
+
+.formulario__btn {
+    width: 20vh;
+    height: 5vh;    
+    background: #E07A5F;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.formulario__grupo-btn-enviar {
+    width: 95%;
+}
+
+/* .formulario__grupo-terminos,
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+    grid-column: span 2;
+} */
+
+.formulario__mensaje {
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.formulario__mensaje-activo {
+    display: block;
+}
+
+.formulario__mensaje p {
+    margin: 0;
+}
+
+.formulario__validacion-estado {
+    color: white;
+    opacity: 1;
+}
+
+/* ----- -----  Estilos para Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+    color: #1ed12d;
+    opacity: 1;
+
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+    color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+    border: 3px solid #bb2929;
+}
+
+.bio-2 {
+    display: none;
+}
+
+
+#imagen-footer{
+    padding: 15px;
+}
+
+/* media query */
+@media only screen and (max-width: 1033px) {
+    .bio {
+        display: none;
+    }
+
+    .bio-2 {
+        display: block;
+    }
+}
+
+
+/* PARA IPAD */
+
+@media (min-width: 768px) and (max-width: 1000px) {
+    #container-modalUno{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+    #container-modalDos{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #container-modalTres{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #container-modalCuatro{
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    #imagen-elasesinatodejr{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imagen-misterioenelhotelw{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .texto-contactaralaautora{
+        font-size: 10px;
+    }
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1000px)  {
+    
+
+    #footer{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    #imagen-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+        margin-left: 30%;
+    }
+}
